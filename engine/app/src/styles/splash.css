@@ -1,0 +1,50 @@
+/* The preload screen (index.html): linked from the page itself, so it shows before the app's
+   script and styles have come (the title shows again at the top of the ? panel, _about.scss). Six Caps: a very tall face by Vernon Adams (SIL OFL 1.1,
+   ../fonts/six-caps-OFL.txt), its Latin glyphs kept with the app. */
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fonts/six-caps.woff2') format('woff2');
+}
+
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+  background: #fff;
+  transition: opacity var(--fade, 1.5s) ease, visibility 0s var(--fade, 1.5s); /* --fade: main.js's INTRO.fade */
+}
+
+.splash--done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.splash__title {
+  margin: 0;
+  font: 400 min(46vh, 35vw) / 0.9 'Six Caps', 'Arial Narrow', sans-serif; /* 35vw: ASSEMBLAGE is 2.45 em wide, so it takes 86% of a narrow screen */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.splash__throbber {
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: splash-turn 0.8s linear infinite;
+}
+
+@keyframes splash-turn {
+  to { transform: rotate(1turn); }
+}
+

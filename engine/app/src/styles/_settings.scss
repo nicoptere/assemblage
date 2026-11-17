@@ -1,0 +1,162 @@
+@use 'tokens' as *;
+
+// the settings card, top right (Settings.js): controls, a rule, then the frame's figures and its band
+$collisions: #5aa9ff;
+$marshalling: #b48cff;
+$solver: $accent;
+$render: #52d18c;
+$other: #8f96a3;
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(300px, calc(100% - 24px));
+  padding: 14px 16px;
+
+  // every control on one grid: label, control, value
+  .range,
+  .switch,
+  .settings__row {
+    display: grid;
+    grid-template-columns: 112px 1fr auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .range__input { width: 100%; margin: 0; }
+  .range__value { min-width: 48px; text-align: right; }
+  .switch__track { grid-column: 3; }
+  .segmented { grid-column: 2 / 4; justify-self: end; }
+}
+
+.settings__label {
+  font: 600 12px/1 $font;
+  color: $muted;
+}
+
+// a labelled rule over a group of controls
+.settings__section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font: 600 11px/1 $font;
+  color: $muted;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  &::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid $line;
+  }
+}
+
+.settings__rule {
+  width: 100%;
+  margin: 2px 0;
+  border: 0;
+  border-top: 1px solid $line;
+}
+
+.settings__figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.settings__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+}
+
+.settings__value { font: 600 15px/1 $mono; color: $text; }
+.settings__unit { font: 10px/1 $font; color: $muted; white-space: nowrap; }
+
+// a frame as a band (FrameBand.js): the phases in their colours, the rest of the frame empty
+.band {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.band__bar {
+  position: relative;
+  display: flex;
+  height: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+}
+
+.band__part {
+  height: 100%;
+  transition: width 0.25s;
+
+  &--collisions { background: $collisions; }
+  &--marshalling { background: $marshalling; }
+  &--solver { background: $solver; }
+  &--render { background: $render; }
+  &--other { background: $other; }
+}
+
+// where the frame ended, when the phases run past it
+.band__tick {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+
+  &[hidden] { display: none; }
+}
+
+.band__legend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 12px;
+}
+
+.band__key {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 11px/1 $font;
+  color: $muted;
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+  }
+
+  &--collisions::before { background: $collisions; }
+  &--marshalling::before { background: $marshalling; }
+  &--solver::before { background: $solver; }
+  &--render::before { background: $render; }
+  &--other::before { background: $other; }
+}
+
+.band__ms {
+  margin-left: auto;
+  font: 600 11px/1 $mono;
+  color: $text;
+
+  &::after { content: ' ms'; font-weight: 400; color: $muted; }
+}
+
+// with the WebGPU engine, collisions and solver are GPU time: hatched
+.band--gpu {
+  .band__part--collisions,
+  .band__part--solver { background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.18) 0 3px, transparent 3px 6px); }
+}
+
+.band__total { font: 11px/1.3 $mono; color: $muted; }

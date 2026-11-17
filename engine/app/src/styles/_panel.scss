@@ -1,0 +1,103 @@
+@use 'tokens' as *;
+
+.panel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 248px;
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  padding: $gap * 1.5;
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: $radius;
+  backdrop-filter: blur(6px);
+  font-size: 12px;
+
+  &--left {
+    right: auto;
+    left: 12px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+
+  &__section {
+    margin: $gap * 1.5 0 $gap * 0.5;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $muted;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+    padding: 3px 0;
+    cursor: pointer;
+
+    &--range {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      row-gap: 2px;
+
+      input { grid-column: 1 / -1; width: 100%; accent-color: $accent; }
+      output { font-family: $mono; color: $muted; }
+    }
+
+    &--toggle input { accent-color: $accent; margin: 0; }
+
+    &--select { justify-content: space-between; }
+  }
+
+  &__select {
+    min-width: 110px;
+    padding: 3px 6px;
+    color: $text;
+    font: inherit;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid $line;
+    border-radius: 6px;
+
+    option { background: $bg; }
+  }
+
+  &__button {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    margin: 2px 4px 2px 0;
+    padding: 4px 10px;
+    color: $text;
+    font: inherit;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid $line;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover { background: rgba(255, 255, 255, 0.12); }
+
+    &--active,
+    &--active:hover {
+      color: $bg;
+      background: $accent;
+      border-color: $accent;
+    }
+  }
+
+  &__stats {
+    margin: $gap * 1.5 0 0;
+    padding-top: $gap;
+    border-top: 1px solid $line;
+    font-family: $mono;
+    font-size: 11px;
+    line-height: 1.5;
+    color: $muted;
+    white-space: pre;
+  }
+}

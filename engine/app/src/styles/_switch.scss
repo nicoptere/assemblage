@@ -1,0 +1,47 @@
+@use 'tokens' as *;
+
+// a labelled on / off switch (Switch.js): the checkbox hidden over a sliding knob
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 12px/1 $font;
+  color: $muted;
+  cursor: pointer;
+}
+
+.switch__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch__track {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  transition: background 0.15s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: $text;
+    border-radius: 50%;
+    transition: transform 0.15s;
+  }
+}
+
+.switch__input:checked + .switch__track {
+  background: $accent;
+
+  &::after { transform: translateX(14px); background: #1b1308; }
+}
+
+.switch__input:focus-visible + .switch__track { outline: 2px solid $accent; outline-offset: 2px; }

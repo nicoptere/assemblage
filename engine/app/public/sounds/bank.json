@@ -1,0 +1,19 @@
+{
+  "about": "Written by scripts/index-sounds.mjs: impacts by shape and mass class, from file names.",
+  "impacts": {
+    "solid": {
+      "heavy": [],
+      "medium": [],
+      "light": []
+    },
+    "sheet": {
+      "heavy": [],
+      "medium": [],
+      "light": []
+    }
+  },
+  "boom": [
+    "blasts/explosionCrunch_000.ogg",
+    "blasts/explosionCrunch_003.ogg"
+  ]
+}

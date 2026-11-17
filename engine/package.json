@@ -1,0 +1,16 @@
+{
+  "name": "sdfphys",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "core",
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w app",
+    "build": "npm run build -w app",
+    "test": "npm test -w core",
+    "sounds": "npm run sounds -w app",
+    "bake": "cd ../preprocess && python3 -m physbake ../models/mecha_01.glb -o ../engine/app/public/models/mecha_01 --name mecha_01"
+  }
+}

@@ -1,0 +1,32 @@
+@use 'tokens' as *;
+
+// a choice of a few options side by side, one lit (Segmented.js)
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid $line;
+  border-radius: 999px;
+}
+
+.segmented__option {
+  padding: 6px 14px;
+  font: 600 12px/1 $font;
+  color: $muted;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover { color: $text; }
+  &:disabled { opacity: 0.35; cursor: default; }
+  &:disabled:hover { color: $muted; }
+
+  &--on {
+    color: #1b1308;
+    background: $accent;
+
+    &:hover { color: #1b1308; }
+  }
+}

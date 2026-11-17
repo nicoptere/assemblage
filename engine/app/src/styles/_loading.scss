@@ -1,0 +1,38 @@
+@use 'tokens' as *;
+
+// files coming (LoadingBar.js): a thin bar along the top, and the megabytes under it
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 5;
+
+  &[hidden] { display: none; }
+}
+
+.loading__track {
+  height: 3px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.loading__fill {
+  width: 0;
+  height: 100%;
+  background: $accent;
+  transition: width 0.2s;
+}
+
+.loading__text {
+  position: absolute;
+  top: 20px;
+  right: 64px; // left of the settings button
+  width: max-content;
+  max-width: calc(100% - 128px);
+  padding: 5px 12px;
+  font: 12px/1.2 $mono;
+  color: $text;
+  background: $surface;
+  border-radius: 999px;
+}

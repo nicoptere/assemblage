@@ -1,0 +1,21 @@
+@use 'tokens' as *;
+
+// a labelled slider with its value (Range.js)
+.range {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 12px/1 $font;
+  color: $muted;
+}
+
+.range__input {
+  width: 120px;
+  accent-color: $accent;
+}
+
+.range__value {
+  min-width: 34px;
+  font: 12px/1 $mono;
+  color: $text;
+}

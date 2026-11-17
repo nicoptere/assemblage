@@ -1,0 +1,6 @@
+# installed packages, builds, Python caches, the papers' PDFs (each docs folder's download.sh fetches them)
+node_modules/
+dist/
+*.log
+__pycache__/
+docs/*/*.pdf

@@ -1,0 +1,138 @@
+@use 'tokens' as *;
+
+// the big buttons along the bottom
+.bar {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: max-content;
+  max-width: calc(100% - 32px);
+}
+
+.bar__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 0 20px;
+  font: 600 15px/1 $font;
+  color: $text;
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; // a long press is the button's, not the browser's
+  user-select: none;
+
+  &:hover { background: rgba(40, 44, 54, 0.92); }
+  &:active { transform: scale(0.97); }
+  &:disabled { opacity: 0.5; cursor: default; }
+  &[hidden] { display: none; }
+
+  // an icon alone (no label): a circle as tall as the others
+  &--round {
+    justify-content: center;
+    width: 52px;
+    padding: 0;
+  }
+}
+
+.bar__icon {
+  display: inline-flex;
+  font-size: 15px;
+  letter-spacing: -2px;
+}
+
+.bar__thumb {
+  width: 36px;
+  height: 36px;
+  margin-left: -12px;
+  object-fit: cover;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+// a small line over the label: what the button does to what it names
+.bar__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+// a label of one width (an item with `fit`): a longer name cut short, so the button keeps its size
+.bar__button--fit .bar__label {
+  width: 7.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2; // room for descenders, cut by the overflow otherwise
+}
+
+.bar__caption {
+  font: 600 10px/1 $font;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $muted;
+}
+
+// the panels and info lines, hidden until asked for (H)
+#app:not(.chrome) {
+  .panel,
+  .hint,
+  .caption { display: none; }
+}
+
+@media (max-width: 640px), (pointer: coarse) {
+  // Create and Rebuild side by side, sharing the row, their names cut to what is left; the
+  // rest on a row of its own under them (each of the two takes 45%: no third fits beside them)
+  .bar {
+    bottom: 10px;
+    gap: 8px;
+    width: calc(100% - 20px);
+    max-width: 440px;
+  }
+
+  .bar__button {
+    min-height: 48px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .bar__button--fit {
+    flex: 1 1 45%;
+    min-width: 0;
+    padding-right: 12px;
+
+    .bar__text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .bar__label {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .bar__thumb {
+    width: 32px;
+    height: 32px;
+    margin-left: -8px;
+  }
+
+  .bar__button--round {
+    width: 48px;
+    padding: 0;
+  }
+}

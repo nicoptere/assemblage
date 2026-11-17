@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSEMBLAGE</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fff'/%3E%3Cpath d='M11 4.5A4.5 4.5 0 1 0 11 11.5' fill='none' stroke='%23000' stroke-width='2.4'/%3E%3C/svg%3E" />
+    <meta name="description" content="Mechs taken apart and rebuilt into other shapes, in a custom SDF-based WebGPU physics engine. Nicolas Barradeau, 2026." />
+    <link rel="stylesheet" href="/src/styles/splash.css" />
+  </head>
+  <body>
+    <!-- shown until the first model is in (main.js) -->
+    <div id="splash" class="splash" role="status" aria-label="Loading">
+      <h1 class="splash__title">Assemblage</h1>
+      <div class="splash__throbber"></div>
+    </div>
+    <div id="app">
+      <!-- the ? button (ui/About.js) opens this -->
+      <section id="about" class="about" hidden>
+        <h2 class="about__title">Assemblage<a class="about__note" href="https://en.wikipedia.org/wiki/Assemblage_(art)" target="_blank" rel="noopener" title="Assemblage (art)">*</a></h2>
+        <p>real time segmentation and rebuilding of arbitrary 3D models in a physics environment</p>
+        <ul>
+            <li><a href="https://github.com/krea-ai/krea-2" target="_blank" rel="noopener">KREA 2</a> to create a source images and <a href="https://github.com/microsoft/TRELLIS.2" target="_blank" rel="noopener">TRELLIS 2</a> to convert images to 3D models.</li>
+            <li>the models are passed to an auto-segmentation algorithm to retrieve meaningful submeshes.</li>
+            <li>the submeshes are used to rebuild an arbitrary 3D object using a packing algorithm.</li>
+            <li>the app uses a SDF-based CPU/WebGPU physics engine.</li>
+          </ul></p>
+        <p>drag the models, double click to create an explosion, then rebuild a target model with the parts present on
+          stage (or clear and add random parts).</p>
+          <p>on mobile, <strong>long press</strong> the create and rebuild buttons to select the models.</p>
+        
+        <footer class="about__footer">
+          <p class="about__credits">Nicolas Barradeau 20261105<br />
+            home: <a href="https://barradeau.com/" target="_blank" rel="noopener">barradeau.com</a><br />
+            twitter: <a href="https://x.com/nicoptere" target="_blank" rel="noopener">x.com/nicoptere</a></p>
+          <img class="about__qr" src="/qr.svg" alt="QR code: this experiment online" title="Open it on your phone" width="64" height="64" />
+        </footer>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

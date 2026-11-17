@@ -1,0 +1,62 @@
+@use 'tokens' as *;
+
+// the text the "?" button shows (About.js, index.html; the button and the card: _corner.scss)
+.about {
+  width: min(440px, calc(100% - 24px));
+  max-height: calc(100% - 160px);
+  overflow-y: auto;
+  padding: 16px 18px;
+  font: 14px/1.5 $font;
+  color: $text;
+
+  p { margin: 0 0 10px; }
+  p:last-child { margin-bottom: 0; }
+  b { font-weight: 600; }
+  a { color: $accent; }
+}
+
+// the title, a sixth of the opening screen's, in white; its asterisk links to the sculptor
+.about__title {
+  margin: 0 0 12px;
+  padding-top: 0.1em; // room for the accent over the É
+  font: 400 8vh 'Six Caps', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.about__note {
+  margin-left: 0.04em;
+  font-size: 0.55em;
+  vertical-align: top;
+  color: $accent;
+  text-decoration: none;
+
+  &:hover { color: #fff; }
+}
+
+// the credits, and the QR code to the online version at the bottom right
+.about__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid $line;
+}
+
+.about__footer .about__credits { // over .about p's margin
+  margin: 0;
+  color: $muted;
+}
+
+// as tall as the three lines of credits beside it
+.about__qr {
+  flex: none;
+  width: auto;
+  height: 4.5em; // 3 lines of 1.5
+  height: 3lh;
+  aspect-ratio: 1;
+  border-radius: 4px;
+}

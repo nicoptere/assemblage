@@ -1,0 +1,20 @@
+{
+  "name": "@sdfphys/core",
+  "version": "0.1.0",
+  "description": "SDF rigid body physics: XPBD solver, sample-vs-distance-field collisions, joints, assemblies; CPU and WebGPU backends",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./webgpu": "./src/webgpu.js",
+    "./fit": "./src/fit/index.js",
+    "./segment": "./src/segment/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT"
+}

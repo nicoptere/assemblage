@@ -1,0 +1,27 @@
+[
+  {
+    "name": "taschen: armadillo",
+    "file": "taschen_armadillo.glb",
+    "thumb": "thumbs/taschen_armadillo.png"
+  },
+  {
+    "name": "taschen: bunny",
+    "file": "taschen_bunny.glb",
+    "thumb": "thumbs/taschen_bunny.png"
+  },
+  {
+    "name": "taschen: kangaroo",
+    "file": "taschen_kangaro.glb",
+    "thumb": "thumbs/taschen_kangaro.png"
+  },
+  {
+    "name": "taschen: killer whale",
+    "file": "taschen_kwha.glb",
+    "thumb": "thumbs/taschen_kwha.png"
+  },
+  {
+    "name": "sketchfab: giraffe",
+    "file": "giraffe.glb",
+    "thumb": "thumbs/giraffe.png"
+  }
+]

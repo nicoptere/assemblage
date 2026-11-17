@@ -1,0 +1,1182 @@
+{
+ "name": "mecha_06",
+ "voxel": 0.00624,
+ "parts": [
+  {
+   "name": "part_000_REAR_SHIN_R",
+   "role": "REAR_SHIN_R",
+   "chain": "REAR_R",
+   "level": 2,
+   "side": "R"
+  },
+  {
+   "name": "part_001_FRONT_SHIN_L",
+   "role": "FRONT_SHIN_L",
+   "chain": "FRONT_L",
+   "level": 2,
+   "side": "L"
+  },
+  {
+   "name": "part_002_FRONT_PAW_R",
+   "role": "FRONT_PAW_R",
+   "chain": "FRONT_R",
+   "level": 3,
+   "side": "R"
+  },
+  {
+   "name": "part_003_AFT_REACTOR",
+   "role": "AFT_REACTOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_004_REAR_SHIN_L",
+   "role": "REAR_SHIN_L",
+   "chain": "REAR_L",
+   "level": 2,
+   "side": "L"
+  },
+  {
+   "name": "part_005_HULL_CORE",
+   "role": "HULL_CORE",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_006_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_007_HULL_CORE",
+   "role": "HULL_CORE",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_008_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_009_FRONT_THIGH_R",
+   "role": "FRONT_THIGH_R",
+   "chain": "FRONT_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_010_FRONT_THIGH_L",
+   "role": "FRONT_THIGH_L",
+   "chain": "FRONT_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_011_HULL_CORE",
+   "role": "HULL_CORE",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_012_REAR_PAW_L",
+   "role": "REAR_PAW_L",
+   "chain": "REAR_L",
+   "level": 3,
+   "side": "L"
+  },
+  {
+   "name": "part_013_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_014_AFT_REACTOR",
+   "role": "AFT_REACTOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_015_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_016_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_017_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_018_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_019_DORSAL_MODULE",
+   "role": "DORSAL_MODULE",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_020_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_021_REAR_THIGH_R",
+   "role": "REAR_THIGH_R",
+   "chain": "REAR_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_022_FRONT_THIGH_R",
+   "role": "FRONT_THIGH_R",
+   "chain": "FRONT_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_023_SHOULDER_R",
+   "role": "SHOULDER_R",
+   "chain": "ARM_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_024_SHOULDER_L",
+   "role": "SHOULDER_L",
+   "chain": "ARM_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_025_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_026_REAR_THIGH_R",
+   "role": "REAR_THIGH_R",
+   "chain": "REAR_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_027_FRONT_THIGH_R",
+   "role": "FRONT_THIGH_R",
+   "chain": "FRONT_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_028_FRONT_PAW_L",
+   "role": "FRONT_PAW_L",
+   "chain": "FRONT_L",
+   "level": 3,
+   "side": "L"
+  },
+  {
+   "name": "part_029_HULL_CORE",
+   "role": "HULL_CORE",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_030_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_031_FRONT_PAW_R",
+   "role": "FRONT_PAW_R",
+   "chain": "FRONT_R",
+   "level": 3,
+   "side": "R"
+  },
+  {
+   "name": "part_032_REAR_THIGH_L",
+   "role": "REAR_THIGH_L",
+   "chain": "REAR_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_033_FRONT_THIGH_L",
+   "role": "FRONT_THIGH_L",
+   "chain": "FRONT_L",
+   "level": 1,
+   "side": "L"
+  },
+  {
+   "name": "part_034_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_035_REAR_THIGH_R",
+   "role": "REAR_THIGH_R",
+   "chain": "REAR_R",
+   "level": 1,
+   "side": "R"
+  },
+  {
+   "name": "part_036_HEAD_SENSOR",
+   "role": "HEAD_SENSOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  },
+  {
+   "name": "part_037_AFT_REACTOR",
+   "role": "AFT_REACTOR",
+   "chain": "TORSO",
+   "level": 0,
+   "side": "C"
+  }
+ ],
+ "joints": [
+  {
+   "a": 0,
+   "b": 3,
+   "kind": "fixed",
+   "anchor": [
+    0.089502,
+    0.037009,
+    -0.293778
+   ],
+   "normal": [
+    -0.9987,
+    0.0507,
+    -0.0094
+   ],
+   "area": 0.0073919,
+   "radius": 0.05251
+  },
+  {
+   "a": 0,
+   "b": 14,
+   "kind": "fixed",
+   "anchor": [
+    0.083836,
+    -0.035191,
+    -0.301798
+   ],
+   "normal": [
+    -0.8647,
+    0.4098,
+    0.2904
+   ],
+   "area": 0.000169,
+   "radius": 0.00821
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "kind": "ball",
+   "anchor": [
+    -0.153923,
+    -0.032911,
+    0.129472
+   ],
+   "normal": [
+    0.055,
+    0.9954,
+    0.0784
+   ],
+   "area": 0.0024003,
+   "radius": 0.05887
+  },
+  {
+   "a": 1,
+   "b": 28,
+   "kind": "ball",
+   "anchor": [
+    -0.165101,
+    -0.30322,
+    0.089954
+   ],
+   "normal": [
+    0.0473,
+    -0.0724,
+    -0.9963
+   ],
+   "area": 0.00021,
+   "radius": 0.04296
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "kind": "fixed",
+   "anchor": [
+    0.146858,
+    -0.053215,
+    0.114298
+   ],
+   "normal": [
+    -0.9823,
+    0.0679,
+    -0.1744
+   ],
+   "area": 0.0017761,
+   "radius": 0.04866
+  },
+  {
+   "a": 2,
+   "b": 31,
+   "kind": "fixed",
+   "anchor": [
+    0.15258,
+    -0.310345,
+    0.091068
+   ],
+   "normal": [
+    0.2527,
+    -0.0425,
+    -0.9666
+   ],
+   "area": 0.0004464,
+   "radius": 0.03187
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "kind": "fixed",
+   "anchor": [
+    -0.009515,
+    0.165933,
+    -0.183152
+   ],
+   "normal": [
+    -0.0025,
+    0.1645,
+    0.9864
+   ],
+   "area": 0.0002909,
+   "radius": 0.05744
+  },
+  {
+   "a": 3,
+   "b": 14,
+   "kind": "fixed",
+   "anchor": [
+    0.080567,
+    -0.04364,
+    -0.261986
+   ],
+   "normal": [
+    0.4313,
+    -0.8983,
+    -0.0838
+   ],
+   "area": 0.001525,
+   "radius": 0.07242
+  },
+  {
+   "a": 3,
+   "b": 21,
+   "kind": "ball",
+   "anchor": [
+    0.091239,
+    0.011181,
+    -0.128076
+   ],
+   "normal": [
+    0.9911,
+    -0.0367,
+    0.1276
+   ],
+   "area": 0.0002257,
+   "radius": 0.06119
+  },
+  {
+   "a": 3,
+   "b": 25,
+   "kind": "ball",
+   "anchor": [
+    -0.090323,
+    0.147921,
+    -0.181476
+   ],
+   "normal": [
+    0.2728,
+    -0.5668,
+    0.7773
+   ],
+   "area": 0.0001421,
+   "radius": 0.00801
+  },
+  {
+   "a": 3,
+   "b": 26,
+   "kind": "ball",
+   "anchor": [
+    0.08979,
+    0.147946,
+    -0.181311
+   ],
+   "normal": [
+    -0.5372,
+    -0.7993,
+    0.2694
+   ],
+   "area": 0.0001737,
+   "radius": 0.00886
+  },
+  {
+   "a": 3,
+   "b": 30,
+   "kind": "ball",
+   "anchor": [
+    -0.080742,
+    0.08886,
+    -0.393759
+   ],
+   "normal": [
+    -0.2281,
+    0.8423,
+    -0.4883
+   ],
+   "area": 0.0000644,
+   "radius": 0.00477
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "kind": "ball",
+   "anchor": [
+    -0.146184,
+    -0.057393,
+    -0.295873
+   ],
+   "normal": [
+    0.9959,
+    0.0898,
+    -0.0127
+   ],
+   "area": 0.0035974,
+   "radius": 0.05496
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "kind": "ball",
+   "anchor": [
+    -0.135682,
+    -0.304241,
+    -0.401048
+   ],
+   "normal": [
+    -0.5533,
+    -0.3848,
+    0.7388
+   ],
+   "area": 0.0008296,
+   "radius": 0.02807
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "kind": "fixed",
+   "anchor": [
+    0.006491,
+    0.051456,
+    0.203558
+   ],
+   "normal": [
+    -0.8742,
+    0.4395,
+    -0.2064
+   ],
+   "area": 0.0015013,
+   "radius": 0.17368
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "kind": "fixed",
+   "anchor": [
+    0.034487,
+    0.167717,
+    0.306726
+   ],
+   "normal": [
+    -0.2861,
+    -0.0371,
+    0.9575
+   ],
+   "area": 0.0002963,
+   "radius": 0.03183
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "kind": "fixed",
+   "anchor": [
+    -0.065347,
+    -0.075632,
+    0.186446
+   ],
+   "normal": [
+    -0.9432,
+    -0.3005,
+    -0.1415
+   ],
+   "area": 0.001436,
+   "radius": 0.04797
+  },
+  {
+   "a": 5,
+   "b": 16,
+   "kind": "fixed",
+   "anchor": [
+    0.039713,
+    0.22493,
+    0.302155
+   ],
+   "normal": [
+    -0.9966,
+    0.0228,
+    -0.0789
+   ],
+   "area": 0.0000993,
+   "radius": 0.01008
+  },
+  {
+   "a": 5,
+   "b": 21,
+   "kind": "ball",
+   "anchor": [
+    0.078377,
+    -0.008905,
+    -0.026112
+   ],
+   "normal": [
+    -0.9809,
+    0.1187,
+    -0.1541
+   ],
+   "area": 0.0003623,
+   "radius": 0.04302
+  },
+  {
+   "a": 5,
+   "b": 22,
+   "kind": "ball",
+   "anchor": [
+    0.04395,
+    -0.094066,
+    0.095136
+   ],
+   "normal": [
+    0.2274,
+    -0.9676,
+    -0.1094
+   ],
+   "area": 0.000939,
+   "radius": 0.0537
+  },
+  {
+   "a": 5,
+   "b": 27,
+   "kind": "ball",
+   "anchor": [
+    0.056051,
+    0.123575,
+    0.275042
+   ],
+   "normal": [
+    0.9179,
+    0.3906,
+    0.0699
+   ],
+   "area": 0.0001869,
+   "radius": 0.02478
+  },
+  {
+   "a": 5,
+   "b": 29,
+   "kind": "fixed",
+   "anchor": [
+    0.065802,
+    -0.067642,
+    -0.040518
+   ],
+   "normal": [
+    -0.7631,
+    0.6327,
+    -0.1318
+   ],
+   "area": 0.0003285,
+   "radius": 0.02063
+  },
+  {
+   "a": 6,
+   "b": 13,
+   "kind": "fixed",
+   "anchor": [
+    -0.084918,
+    0.086925,
+    -0.292439
+   ],
+   "normal": [
+    0.9851,
+    0.0471,
+    0.1651
+   ],
+   "area": 0.0025377,
+   "radius": 0.05688
+  },
+  {
+   "a": 6,
+   "b": 15,
+   "kind": "fixed",
+   "anchor": [
+    -0.071038,
+    0.054854,
+    -0.292506
+   ],
+   "normal": [
+    0.9973,
+    0.0599,
+    0.0427
+   ],
+   "area": 0.0013672,
+   "radius": 0.03777
+  },
+  {
+   "a": 6,
+   "b": 30,
+   "kind": "fixed",
+   "anchor": [
+    -0.073478,
+    0.042053,
+    -0.342492
+   ],
+   "normal": [
+    0.7863,
+    -0.0123,
+    -0.6177
+   ],
+   "area": 0.0001003,
+   "radius": 0.04575
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "kind": "fixed",
+   "anchor": [
+    -0.08588,
+    0.130601,
+    0.164058
+   ],
+   "normal": [
+    -0.9989,
+    -0.0378,
+    0.0262
+   ],
+   "area": 0.0014799,
+   "radius": 0.06184
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "kind": "fixed",
+   "anchor": [
+    -0.085336,
+    0.045865,
+    0.141436
+   ],
+   "normal": [
+    -0.9987,
+    -0.0494,
+    -0.0143
+   ],
+   "area": 0.0026145,
+   "radius": 0.1091
+  },
+  {
+   "a": 7,
+   "b": 25,
+   "kind": "ball",
+   "anchor": [
+    -0.076328,
+    0.146623,
+    -0.116642
+   ],
+   "normal": [
+    0.4557,
+    -0.8901,
+    0.0058
+   ],
+   "area": 0.0001825,
+   "radius": 0.0158
+  },
+  {
+   "a": 7,
+   "b": 26,
+   "kind": "ball",
+   "anchor": [
+    0.076385,
+    0.148827,
+    -0.109009
+   ],
+   "normal": [
+    0.9999,
+    -0.0153,
+    0.0062
+   ],
+   "area": 0.0001746,
+   "radius": 0.03342
+  },
+  {
+   "a": 8,
+   "b": 16,
+   "kind": "fixed",
+   "anchor": [
+    -0.034426,
+    0.290521,
+    0.308268
+   ],
+   "normal": [
+    -0.5531,
+    0.5905,
+    -0.5877
+   ],
+   "area": 0.0004086,
+   "radius": 0.0267
+  },
+  {
+   "a": 8,
+   "b": 20,
+   "kind": "fixed",
+   "anchor": [
+    -0.050986,
+    0.233817,
+    0.394736
+   ],
+   "normal": [
+    -0.8508,
+    0.1806,
+    0.4936
+   ],
+   "area": 0.0006183,
+   "radius": 0.02181
+  },
+  {
+   "a": 8,
+   "b": 27,
+   "kind": "ball",
+   "anchor": [
+    0.022956,
+    0.050609,
+    0.307532
+   ],
+   "normal": [
+    -0.1802,
+    -0.0836,
+    -0.9801
+   ],
+   "area": 0.0001643,
+   "radius": 0.01764
+  },
+  {
+   "a": 10,
+   "b": 33,
+   "kind": "fixed",
+   "anchor": [
+    -0.057261,
+    0.005616,
+    0.12273
+   ],
+   "normal": [
+    0.9965,
+    -0.0609,
+    -0.057
+   ],
+   "area": 0.0012494,
+   "radius": 0.02266
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "kind": "ball",
+   "anchor": [
+    -0.085159,
+    -0.027657,
+    -0.106408
+   ],
+   "normal": [
+    0.9928,
+    -0.0735,
+    -0.095
+   ],
+   "area": 0.0000728,
+   "radius": 0.03387
+  },
+  {
+   "a": 11,
+   "b": 22,
+   "kind": "ball",
+   "anchor": [
+    -0.053268,
+    -0.088194,
+    0.021688
+   ],
+   "normal": [
+    0.8653,
+    0.481,
+    -0.1406
+   ],
+   "area": 0.000172,
+   "radius": 0.00692
+  },
+  {
+   "a": 11,
+   "b": 29,
+   "kind": "fixed",
+   "anchor": [
+    -0.0634,
+    -0.06696,
+    -0.038369
+   ],
+   "normal": [
+    0.9877,
+    0.1254,
+    -0.0929
+   ],
+   "area": 0.0002148,
+   "radius": 0.02243
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "kind": "ball",
+   "anchor": [
+    -0.08597,
+    -0.057544,
+    -0.181529
+   ],
+   "normal": [
+    -0.7903,
+    -0.6004,
+    -0.1221
+   ],
+   "area": 0.0008962,
+   "radius": 0.06628
+  },
+  {
+   "a": 13,
+   "b": 30,
+   "kind": "fixed",
+   "anchor": [
+    -0.073152,
+    0.10045,
+    -0.343816
+   ],
+   "normal": [
+    0.7584,
+    0.6502,
+    -0.0462
+   ],
+   "area": 0.0000675,
+   "radius": 0.00371
+  },
+  {
+   "a": 16,
+   "b": 20,
+   "kind": "fixed",
+   "anchor": [
+    0.045933,
+    0.230789,
+    0.395543
+   ],
+   "normal": [
+    -0.9888,
+    0.1169,
+    -0.0927
+   ],
+   "area": 0.0014776,
+   "radius": 0.03147
+  },
+  {
+   "a": 17,
+   "b": 18,
+   "kind": "fixed",
+   "anchor": [
+    0.000417,
+    0.322612,
+    0.382413
+   ],
+   "normal": [
+    0.9999,
+    0.006,
+    -0.0151
+   ],
+   "area": 0.0003549,
+   "radius": 0.00787
+  },
+  {
+   "a": 17,
+   "b": 20,
+   "kind": "fixed",
+   "anchor": [
+    -0.033038,
+    0.313246,
+    0.388293
+   ],
+   "normal": [
+    0.5794,
+    -0.7419,
+    0.3375
+   ],
+   "area": 0.001022,
+   "radius": 0.01483
+  },
+  {
+   "a": 18,
+   "b": 20,
+   "kind": "fixed",
+   "anchor": [
+    0.036715,
+    0.312396,
+    0.387756
+   ],
+   "normal": [
+    -0.8317,
+    -0.1262,
+    -0.5407
+   ],
+   "area": 0.0005405,
+   "radius": 0.00944
+  },
+  {
+   "a": 19,
+   "b": 34,
+   "kind": "fixed",
+   "anchor": [
+    0.068625,
+    0.23316,
+    0.234695
+   ],
+   "normal": [
+    0.4625,
+    -0.5084,
+    0.7264
+   ],
+   "area": 0.0015943,
+   "radius": 0.03047
+  },
+  {
+   "a": 19,
+   "b": 36,
+   "kind": "fixed",
+   "anchor": [
+    -0.068406,
+    0.23332,
+    0.234871
+   ],
+   "normal": [
+    -0.5082,
+    -0.4831,
+    0.713
+   ],
+   "area": 0.0018479,
+   "radius": 0.03085
+  },
+  {
+   "a": 21,
+   "b": 29,
+   "kind": "ball",
+   "anchor": [
+    0.073799,
+    -0.060236,
+    -0.05541
+   ],
+   "normal": [
+    -0.8887,
+    0.451,
+    0.0827
+   ],
+   "area": 0.0000935,
+   "radius": 0.00908
+  },
+  {
+   "a": 24,
+   "b": 25,
+   "kind": "fixed",
+   "anchor": [
+    -0.109941,
+    0.145639,
+    0.014145
+   ],
+   "normal": [
+    -0.8735,
+    -0.4636,
+    -0.1485
+   ],
+   "area": 0.0000391,
+   "radius": 0.00244
+  },
+  {
+   "a": 23,
+   "b": 26,
+   "kind": "fixed",
+   "anchor": [
+    0.109757,
+    0.144609,
+    0.01473
+   ],
+   "normal": [
+    -0.4784,
+    0.3919,
+    -0.7858
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 7,
+   "b": 19,
+   "kind": "fixed",
+   "anchor": [
+    -0.077736,
+    0.186416,
+    0.151775
+   ],
+   "normal": [
+    0.8572,
+    -0.4862,
+    -0.1696
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 14,
+   "b": 35,
+   "kind": "ball",
+   "anchor": [
+    0.021427,
+    -0.001538,
+    -0.401287
+   ],
+   "normal": [
+    0.2843,
+    0.898,
+    -0.3359
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 14,
+   "b": 32,
+   "kind": "ball",
+   "anchor": [
+    -0.024362,
+    -0.003811,
+    -0.402859
+   ],
+   "normal": [
+    -0.5368,
+    0.7068,
+    -0.4608
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "kind": "ball",
+   "anchor": [
+    -0.060413,
+    0.018174,
+    0.048136
+   ],
+   "normal": [
+    0.4185,
+    0.0436,
+    -0.9072
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "kind": "ball",
+   "anchor": [
+    0.06033,
+    0.019205,
+    0.048795
+   ],
+   "normal": [
+    0.3528,
+    0.1276,
+    0.9269
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  },
+  {
+   "a": 32,
+   "b": 37,
+   "kind": "ball",
+   "anchor": [
+    -0.028669,
+    0.069968,
+    -0.43798
+   ],
+   "normal": [
+    0.6385,
+    0.7053,
+    -0.3081
+   ],
+   "area": 0,
+   "radius": 0,
+   "bridge": true
+  }
+ ]
+}
